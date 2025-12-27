@@ -1,0 +1,1306 @@
+body {
+  font-family: arial, sans-serif;
+  background: linear-gradient(140deg, #d8e6f9 0%, #8ab4ff 30%, #3d7bff 60%, #0f3dbe 100%);
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+/* --- General Header Styling --- */
+header {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* --- Top Section (Logo + Name) --- */
+.header-top {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(1, 29, 119);
+  font-family: 'cinzel', serif;
+  padding: 5px 20px;
+  background: rgba(4, 47, 167, 0); /* Translucent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.top-right {
+ display: flex;
+ gap: 20px;
+ align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-item .material-icons{
+  font-size: 20px;
+  color: white;
+}
+
+.contact-item a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.header-top h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+/* --- Bottom Section (Navigation) --- */
+.header-bottom {
+  height: 15vh;
+  background-color: #2b2d3f; /* grayish-blue tone */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0); /* Translucent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  color: rgb(1, 29, 199);
+}
+
+.bishop_logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bishop_logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.hb-text {
+  color: rgb(1, 10, 136);
+  font-family: 'cinzel', serif;
+  font-size: 1.4rem;
+  margin-left: 20px;
+  padding-top: 7px;;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000; /* light blue-ish text */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  background: linear-gradient(90deg, #00aaff, #00ffaa);
+  -webkit-background-clip: text;
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* 20% black overlay */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: white;
+  text-align: center;
+  max-width: 90%;
+}
+
+.hero-content h1 {
+  font-family: 'Cinzel', serif; /* fancy font */
+  font-weight: 500; /* strong but not too strong */
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.hero-buttons a {
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-live {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn-live:hover {
+  background-color: #cc0000;
+}
+
+.btn-join {
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+}
+
+.btn-join:hover {
+  background-color: #1ebe57;
+}
+
+
+.hero-next {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-next-container {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* --- Slideshow --- */
+.slideshow {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 80vh;
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 3px;
+  user-select: none;
+  background-color: rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* --- Paragraphs --- */
+.paragraphs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  height: 80vh;
+}
+
+.paragraphs p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.about-intro {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.about-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-lead{
+  font-size: 1.1rem;
+  line-height:1.6;
+  color: white;
+}
+
+.learn-more {
+background-color: #4676df;
+transition: background-color 0.3s ease;
+font-weight: 600;
+width:fit-content;
+margin: 20px auto;
+padding: 10px 15px;
+border-radius: 6px;
+color: white;
+}
+
+.learn-more:hover {
+  background-color: #0f3dbe;
+}
+
+.learn-more a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.services-section {
+  padding: 5vh 5%;
+}
+
+.live-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ff0000;
+  color: white;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0e0f3d;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  cursor: default !important;
+  position: relative;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+
+.service-info {
+  position: relative;
+  background: rgba(255,255,255,0.15); /* frosted glass effect */
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-item .material-icons {
+  font-size: 24px;
+}
+
+/* Ministries Banner */
+.ministries-banner {
+    position: relative;
+    width: 100%;
+    height: 30vh; /* you can change to 25vh or 35vh */
+    background: url('Assets/Images/ministries-banner.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Overlay */
+.ministries-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* 35% black overlay */
+    z-index: 1;
+}
+
+/* Content */
+.banner-content {
+    position: absolute;
+    z-index: 2; /* above overlay */
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    color: rgb(150, 64, 231);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.ministries-intro {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-container {
+    width: 70%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.ministries-intro h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.ministries-intro p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ministry-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.ministry-image img {
+    width: 400px;
+    height: 300px;
+    object-fit:cover ;
+    border-radius: 12px;
+}
+
+.ministry-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.ministry-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ministry-block.reverse{
+    flex-direction: row-reverse;
+}
+
+
+.join-btn {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #001483;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #cfd8ff;
+  color: #0e0f3d;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+
+.cta-section {
+    position: relative;
+    background: url('Assets/Images/cta-bg.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 80px 0;
+    overflow: hidden;
+}
+
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.cta-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.cta-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-btn {
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cta-btn.primary {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.cta-btn.primary:hover {
+    background: #0077cc;
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta-btn.secondary:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* -------------------- */
+/* ABOUT HERO SECTION   */
+/* -------------------- */
+
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background: url("Assets/Images/about-hero.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,50,0.4);
+}
+
+.about-hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 3;
+}
+
+.about-hero-content h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+}
+
+
+
+/* ------------------------------ */
+/* ABOUT CHURCH SECTION           */
+/* ------------------------------ */
+
+.about-church {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.about-church h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-church h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-church h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-church p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: white;
+  text-align: left;
+}
+
+
+
+/* ------------------------------ */
+/* LEADERSHIP SECTION             */
+/* ------------------------------ */
+
+.about-leadership {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+.about-leadership h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leader-card {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px;
+  background: rgba(190, 18, 18, 0.267);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content doesn’t overflow */
+}
+
+.leader-card h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.leader-card ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: white;
+} 
+
+.leader-img img {
+  width: 120px; /* Smaller size for dropcap effect */
+  height: 120px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  float: left; /* Float image to the left */
+  margin-right: 15px; /* Space between image and text */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leader-info {
+  position: relative;
+}
+
+.leader-info p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.6;
+  max-height: none; /* Remove height restriction */
+  overflow: visible; /* Ensure all content is visible */
+}
+
+.read-more {
+  display: none; /* Hide the Read More button */
+}
+
+
+
+/* ------------------------------ */
+/* MISSION - VISION - VALUES      */
+
+.about-mvv {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: flex-start;
+}
+
+.about-mvv h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mvv-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.mvv-box {
+  background: rgba(190, 18, 18, 0.267);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.mvv-box h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.mvv-box p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
+/* ------------------------------ */
+/* MINISTRIES PREVIEW SECTION     */
+/* ------------------------------ */
+
+.about-ministries-preview {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about-ministries-preview h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-ministries-preview p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.ministry-preview-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.ministry-preview-card {
+  background: rgba(190, 18, 18, 0.267);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.ministry-preview-card:hover {
+  transform: translateY(-5px);
+}
+
+.ministry-preview-card h4 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 10px;
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #2b2d3f;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-all-btn:hover {
+  background-color: #0e0f3d;
+}
+
+.give-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.give-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.give-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+}
+
+.give-now-btn {
+  display: flex;
+  text-align: center;
+  border-radius: 6px;
+  color: white;
+  background-color: #1e90ff;
+  justify-content: center;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 10px 15px;
+}
+
+.give-now-btn:hover {
+  background-color: #001483;
+}
+.give-now-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.Give-banner {
+    position: relative;
+    width: 100%;
+    height: 30vh; /* you can change to 25vh or 35vh */
+    background: url('Assets/Images/give-banner.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Give-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); /* 35% black overlay */
+    z-index: 1;
+}
+
+.Give-banner .banner-content {
+    position: absolute;
+    z-index: 2; /* above overlay */
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.Give-banner .banner-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+    font-family: Cinzel, serif;
+}
+
+.Give-banner .banner-content p {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.give-methods {
+  margin-top: 80px;
+  color: white;
+}
+
+.give-methods h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Cinzel', serif;
+}
+
+.give-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.give-card-mpesa {
+  background-image: url('Assets/Images/mobile-background.jpeg');
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.give-card-mpesa:hover {
+  transform: translateY(-5px);
+}
+
+.give-card-bank {
+  background-image: url('Assets/Images/bank-background.jpeg');
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.give-card-bank:hover {
+  transform: translateY(-5px);
+}
+
+.give-card-paypal {
+  background-image: url('Assets/Images/paypal-background.jpeg');
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.give-card-paypal:hover {
+  transform: translateY(-5px);
+}
+
+.give-card-personal {
+  background-image: url('Assets/Images/personal-background.jpeg');
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.give-card-personal:hover {
+  transform: translateY(-5px);
+}
+
+.give-card-bank-overlay,
+.give-card-paypal-overlay,
+.give-card-personal-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.438);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.give-card-mpesa-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.give-card-mpesa h3 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card-bank h3,
+.give-card-paypal h3,
+.give-card-personal h3 {
+
+  font-family: 'Cinzel', serif;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card-mpesa p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card-bank p,
+.give-card-paypal p,
+.give-card-personal p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card-mpesa ul {
+  padding-left: 18px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card-bank ul,
+.give-card-paypal ul,
+.give-card-personal ul {
+  padding-left: 18px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+.give-card.primary {
+  border: 2px solid #1e90ff;
+}
+
+.give-card.muted {
+  opacity: 0.85;
+}
+
+.paypal-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.paypal-link:hover {
+  background-color: #0077cc;
+}
+
+.give-grid {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.contact-container h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-lead{
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-card {
+  margin-top: 40px;
+  background: rgba(190, 18, 18, 0.267);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 60px auto;
+}
+
+.site-footer {
+  background: #0a1633;
+  color: #ffffff;
+  padding-top: 60px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h4,
+.footer-brand h3 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-brand img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #cfd8ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #3d7bff;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact .material-icons {
+  font-size: 18px;
+  color: #3d7bff;
+}
+
+.footer-note {
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  background: #050d1f;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
