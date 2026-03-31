@@ -3,172 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Give - Anointed Rivers Ministry</title>
+    <meta name="description" content="Support the work of Anointed Rivers Ministry. Give online via M-Pesa, bank transfer, PayPal, or in person.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" type="image/png" href="Assets/Images/logo.png">
-    <title>Annointed Rivers Ministry</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="header-top">
-    <div class="logo-container">
-      <img src="Assets/Images/logo.png" alt="logo" class="logo">
-      <h1 class="title">Anointed Rivers Ministry</h1>
-    </div>
-    <div class="top-right">
-      <div class="contact-item">
-        <span class="material-icons">call</span>
-        <a href="tel:+254116070444">+254116070444</a>
-        <div class="contact-item">
-          <span class="material-icons">email</span>
-          <a href="annointedrivers@gmail.com">annointedrivers@gmail.com</a>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"></div>
+            <p>Loading...</p>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="header-bottom">
-    <div class="bishop_logo-container">
-        <img src="Assets/Images/Bishop.jpeg" alt="Bishop Logo" class="bishop_logo">
-      <div class="hb-text">
-        <h3>Light In The World</h3>
-      </div>
-    </div>
-      <nav class="nav-right" id="home">
-        <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="about.html">About Us</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="ministries.html">Ministries</a>
-        <a href="give.html">Give</a>
-      </nav>
-  </div>
-</header>
-<section class="Give-banner">
-    <div class="banner-overlay"></div>
-
-    <div class="banner-content">
-        <h1>Give</h1>
-        <p>Supporting God's Work Together</p>
     </div>
 
-</section>
-<section class="give-container">
-  <div class="give-title"><h2>Give to God</h2></div>
-  <div class="give-paragraph">
-    <p>
-      Giving is an act of worship and obedience to God. At Anointed Rivers Ministry, we provide various ways for you to give and support the work of the ministry.
-      Your contributions help us reach more people with the message of hope and salvation, support our community programs, and maintain our facilities.
-      Whether you choose to give online, in person, or through other means, your generosity makes a difference. Thank you for partnering with us in this mission.
-    </p>
-  </div>
-    <section class="give-methods">
-  <h2>How to Give</h2>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-group">
+                <img src="Assets/Images/logo.png" alt="Anointed Rivers Ministry" class="logo">
+                <div class="logo-text">
+                    <span class="logo-title">Anointed Rivers</span>
+                    <span class="logo-subtitle">Light In The World</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="give.html" class="active">Give</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
 
-  <div class="give-grid">
-    <div class="give-card-mpesa">
-        <div class="give-card-mpesa-overlay"></div>
-      <h3>Mobile Money</h3>
-      <p>Fast and convenient giving via mobile money.</p>
-      <ul>
-        <li><strong>M-Pesa Paybill:</strong> 123456</li>
-        <li><strong>Account Name:</strong> Your Full Name</li>
-      </ul>
+            <div class="nav-cta">
+                <a href="https://www.facebook.com/YourPage/live" target="_blank" class="btn-live">
+                    <span class="live-dot"></span>
+                    Live
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close-btn" id="closeMenuBtn">
+            <span class="material-symbols-rounded">close</span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="give.html">Give</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="https://www.facebook.com/YourPage/live" target="_blank" class="btn-live mobile-live">
+            <span class="live-dot"></span>
+            Watch Live
+        </a>
     </div>
 
-    <div class="give-card-bank">
-      <div class="give-card-bank-overlay"></div>
-      <h3>Bank Transfer</h3>
-      <p>Direct bank transfer to support the ministry.</p>
-      <ul>
-        <li><strong>Bank:</strong> XYZ Bank</li>
-        <li><strong>Account Name:</strong> Anointed Rivers Ministry</li>
-        <li><strong>Account Number:</strong> 0001234567890</li>
-        <li><strong>Branch:</strong> Main Branch</li>
-      </ul>
-    </div>
-    <div class="give-card-paypal">
-        <div class="give-card-paypal-overlay"></div>
-      <h3>PayPal</h3>
-      <p>For international partners and supporters.</p>
-      <a href="#" class="paypal-link">Give via PayPal</a>
-    </div>
-    
-    <div class="give-card-personal">
-        <div class="give-card-personal-overlay"></div>
-      <h3>In-Person Giving</h3>
-      <p>Available during church services.</p>
-      <ul>
-        <li>Sundays: 9 AM & 11 AM</li>
-        <li>At the ministry offices</li>
-      </ul>
-    </div>
-  </div>
-</section>
-</section>
-<footer class="site-footer">
-  <div class="footer-container">
+    <section class="page-hero give-hero">
+        <div class="page-hero-bg" style="background-image: url('Assets/Images/give-banner.jpeg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Give</h1>
+            <p>Supporting God's Work Together</p>
+        </div>
+    </section>
 
-    <!-- Brand / About -->
-    <div class="footer-col footer-brand">
-      <img src="Assets/Images/logo.png" alt="Anointed Rivers Ministry Logo">
-      <h3>Anointed Rivers Ministry</h3>
-      <p>
-        A Christ-centered ministry committed to spreading the Gospel,
-        transforming lives, and being a light in the world.
-      </p>
-    </div>
+    <section class="give-intro">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Generosity</span>
+                <h2 class="section-title">Give to God</h2>
+                <p class="section-subtitle">Giving is an act of worship and obedience to God. At Anointed Rivers Ministry, we provide various ways for you to give and support the work of the ministry.</p>
+            </div>
+            
+            <div class="give-message">
+                <p>Your contributions help us reach more people with the message of hope and salvation, support our community programs, and maintain our facilities. Whether you choose to give online, in person, or through other means, your generosity makes a difference. Thank you for partnering with us in this mission.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="ministries.html">Ministries</a></li>
-        <li><a href="give.html">Give</a></li>
-      </ul>
-    </div>
+    <section class="give-methods-section">
+        <div class="container">
+            <h3 class="methods-title">How to Give</h3>
+            
+            <div class="give-methods-grid">
+                <div class="give-method-card mpesa">
+                    <div class="method-header">
+                        <div class="method-icon">
+                            <span class="material-symbols-rounded">smartphone</span>
+                        </div>
+                        <h4>M-Pesa</h4>
+                    </div>
+                    <p class="method-desc">Fast and convenient mobile giving via M-Pesa.</p>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Paybill Number:</span>
+                            <span class="detail-value">123456</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Name:</span>
+                            <span class="detail-value">Your Full Name</span>
+                        </div>
+                    </div>
+                    <div class="method-instructions">
+                        <ol>
+                            <li>Go to M-Pesa menu</li>
+                            <li>Select Lipa na M-Pesa</li>
+                            <li>Select Pay Bill</li>
+                            <li>Enter Business No. <strong>123456</strong></li>
+                            <li>Enter Account No. <strong>Your Name</strong></li>
+                            <li>Enter Amount</li>
+                            <li>Enter PIN and Confirm</li>
+                        </ol>
+                    </div>
+                </div>
 
-    <!-- Contact -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul class="footer-contact">
-        <li>
-          <span class="material-icons">call</span>
-          <a href="tel:+254116070444">+254 116 070 444</a>
-        </li>
-        <li>
-          <span class="material-icons">email</span>
-          <a href="mailto:annointedrivers@gmail.com">
-            annointedrivers@gmail.com
-          </a>
-        </li>
-        <li>
-          <span class="material-icons">location_on</span>
-          Eldoret, Kenya
-        </li>
-      </ul>
-    </div>
+                <div class="give-method-card bank">
+                    <div class="method-header">
+                        <div class="method-icon">
+                            <span class="material-symbols-rounded">account_balance</span>
+                        </div>
+                        <h4>Bank Transfer</h4>
+                    </div>
+                    <p class="method-desc">Direct bank transfer to support the ministry.</p>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Bank:</span>
+                            <span class="detail-value">XYZ Bank</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Name:</span>
+                            <span class="detail-value">Anointed Rivers Ministry</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Account Number:</span>
+                            <span class="detail-value">0001234567890</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Branch:</span>
+                            <span class="detail-value">Main Branch</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Service Times -->
-    <div class="footer-col">
-      <h4>Service Times</h4>
-      <p>Sundays</p>
-      <p>9:00 AM & 11:00 AM</p>
-      <p class="footer-note">
-        Need prayer? Reach out — you are not alone.
-      </p>
-    </div>
+                <div class="give-method-card paypal">
+                    <div class="method-header">
+                        <div class="method-icon">
+                            <span class="material-symbols-rounded">language</span>
+                        </div>
+                        <h4>PayPal</h4>
+                    </div>
+                    <p class="method-desc">For international partners and supporters.</p>
+                    <div class="method-action">
+                        <a href="#" class="btn-primary btn-full">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            Give via PayPal
+                        </a>
+                    </div>
+                    <p class="method-note">Secure online giving for international supporters</p>
+                </div>
 
-  </div>
+                <div class="give-method-card inperson">
+                    <div class="method-header">
+                        <div class="method-icon">
+                            <span class="material-symbols-rounded">church</span>
+                        </div>
+                        <h4>In Person</h4>
+                    </div>
+                    <p class="method-desc">Give during our church services or at the office.</p>
+                    <div class="method-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Sunday Services:</span>
+                            <span class="detail-value">9:00 AM & 11:00 AM</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Office Hours:</span>
+                            <span class="detail-value">Mon-Fri, 8AM-5PM</span>
+                        </div>
+                    </div>
+                    <div class="method-location">
+                        <span class="material-symbols-rounded">location_on</span>
+                        <span>123 Faith Avenue, Eldoret</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Bottom strip -->
-  <div class="footer-bottom">
-    <p>
-      © <span id="year"></span> Anointed Rivers Ministry. All Rights Reserved.
-    </p>
-  </div>
-</footer>
-  </body>
-  </html>
+    <section class="give-impact">
+        <div class="container">
+            <div class="impact-content">
+                <h3>Your Impact</h3>
+                <p>Every gift, no matter the size, helps us:</p>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <span class="material-symbols-rounded">campaign</span>
+                        <span>Spread the Gospel</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="material-symbols-rounded">family_restroom</span>
+                        <span>Support Families</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="material-symbols-rounded">school</span>
+                        <span>Train Leaders</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="material-symbols-rounded">volunteer_activism</span>
+                        <span>Community Outreach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="Assets/Images/logo.png" alt="Logo">
+                <h3>Anointed Rivers Ministry</h3>
+                <p>A Christ-centered ministry committed to spreading the Gospel, transforming lives, and being a light in the world.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/254116070444" target="_blank"><span class="material-symbols-rounded">chat</span></a>
+                    <a href="https://www.facebook.com/YourPage" target="_blank"><span class="material-symbols-rounded">facebook</span></a>
+                    <a href="https://www.instagram.com/YourPage" target="_blank"><span class="material-symbols-rounded">photo_camera</span></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="give.html">Give</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="index.html#services">Sunday Service</a></li>
+                    <li><a href="index.html#services">Wednesday Fellowship</a></li>
+                    <li><a href="index.html#services">Thursday Fellowship</a></li>
+                    <li><a href="index.html#services">Home Fellowship</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+254116070444"><span class="material-symbols-rounded">call</span> +254 116 070 444</a></li>
+                    <li><a href="mailto:annointedrivers@gmail.com"><span class="material-symbols-rounded">email</span> annointedrivers@gmail.com</a></li>
+                    <li><span class="material-symbols-rounded">location_on</span> Eldoret, Kenya</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Anointed Rivers Ministry. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/JS/main.js"></script>
+</body>
+</html>

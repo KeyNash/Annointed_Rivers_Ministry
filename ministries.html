@@ -3,215 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries - Anointed Rivers Ministry</title>
+    <meta name="description" content="Explore our ministries at Anointed Rivers Ministry. Youth, Sunday School, Men, Women, and Worship teams.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/png" href="Assets/Images/logo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Annointed Rivers Ministry</title>
 </head>
-<body class="body">
-<header id="home">
-  <div class="header-top">
-    <div class="logo-container">
-      <img src="Assets/Images/logo.png" alt="logo" class="logo">
-      <h1 class="title">Anointed Rivers Ministry</h1>
-    </div>
-    <div class="top-right">
-      <div class="contact-item">
-        <span class="material-icons">call</span>
-        <a href="tel:+254116070444">+254116070444</a>
-        <div class="contact-item">
-          <span class="material-icons">email</span>
-          <a href="annointedrivers@gmail.com">annointedrivers@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="header-bottom">
-    <div class="bishop_logo-container">
-        <img src="Assets/Images/Bishop.jpeg" alt="Bishop Logo" class="bishop_logo">
-      <div class="hb-text">
-        <h3>Light In The World</h3>
-      </div>
-    </div>
-      <nav class="nav-right">
-        <a href="index.html#home">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="about.html">About Us</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="ministries.html">Ministries</a>
-        <a href="give.html">Give</a>
-      </nav>
-  </div>
-</header>
-<section class="ministries-banner">
-    <div class="banner-overlay"></div>
-
-    <div class="banner-content">
-        <h1>Our Ministries</h1>
-        <p>Serving with Purpose</p>
-    </div>
-</section>
-<section class="ministries-intro">
-    <div class="intro-container">
-        <h2>Growing Together in Service</h2>
-        <p>
-            At Annointed Rivers Ministry, each department plays a vital role in building a strong,
-            Christ-centered community. Our ministries are designed to equip believers, nurture their
-            gifts, and create spaces where faith is lived out with purpose. 
-        </p>
-        <p>
-            Whether it's serving, teaching, worship, outreach, or supporting the next generation,
-            every ministry contributes to the mission God has given us. Explore the teams that move
-            this house forward.
-        </p>
-    </div>
-</section>
-<section class="ministry-block">
-    <div class="ministry-image">
-        <img src="Assets/Images/youth-ministry.jpeg" alt="Youth Ministry">
-    </div>
-    <div class="ministry-text">
-        <h3>Youth Ministry</h3>
-        <p>
-            Our Youth Ministry empowers the next generation to live boldly in faith.
-            Weekly sessions include Bible study, worship, mentorship, and outreach projects.
-        </p>
-        <a href="#" class="join-btn">Join Us</a>
-    </div>
-</section>
-<section class="ministry-block reverse">
-    <div class="ministry-image">
-        <img src="Assets/Images/sunday-school.jpg" alt="Sunday School Ministry">
-    </div>
-    <div class="ministry-text">
-        <h3>Sunday School</h3>
-        <p>
-            Our Sunday School Ministry nurtures children in God’s Word,
-            creating a foundation of faith and understanding from a young age.
-        </p>
-        <a href="#" class="join-btn">Join Us</a>
-    </div>
-</section>
-
-<section class="ministry-block">
-    <div class="ministry-image">
-        <img src="Assets/Images/men-ministry.jpeg" alt="Men's Ministry">
-    </div>
-    <div class="ministry-text">
-        <h3>Men's Ministry</h3>
-        <p>
-            The Men's Ministry empowers men to grow spiritually, lead in their families,
-            and serve the community with integrity and purpose.
-        </p>
-        <a href="#" class="join-btn">Join Us</a>
-    </div>
-</section>
-
-<section class="ministry-block reverse">
-    <div class="ministry-image">
-        <img src="Assets/Images/women-ministry.jpeg" alt="Women's Ministry">
-    </div>
-    <div class="ministry-text">
-        <h3>Women's Ministry</h3>
-        <p>
-            Our Women's Ministry provides fellowship, mentorship, and spiritual growth opportunities,
-            helping women to thrive in faith and daily life.
-        </p>
-        <a href="#" class="join-btn">Join Us</a>
-    </div>
-</section>
-
-<section class="ministry-block">
-    <div class="ministry-image">
-        <img src="images/worship-team.jpg" alt="Worship Team">
-    </div>
-    <div class="ministry-text">
-        <h3>Worship Team</h3>
-        <p>
-            The Worship Team leads the congregation in heartfelt praise and worship,
-            using music and creativity to draw people closer to God.
-        </p>
-        <a href="#" class="join-btn">Join Us</a>
-    </div>
-</section>
-<section class="cta-section">
-    <div class="cta-overlay"></div>
-    <div class="cta-content">
-        <h2>Be Part of What God Is Doing</h2>
-        <p>
-            Join a family that prays together, grows together, and transforms lives.
-            Whether you're near or far, there's a place for you at Annointed Rivers Ministry.
-        </p>
-
-        <div class="cta-buttons">
-            <a href="#" class="cta-btn primary">Join Our WhatsApp Community</a>
-            <a href="#" class="cta-btn secondary">Visit Us This Sunday</a>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"></div>
+            <p>Loading...</p>
         </div>
     </div>
-</section>
-<footer class="site-footer">
-  <div class="footer-container">
 
-    <!-- Brand / About -->
-    <div class="footer-col footer-brand">
-      <img src="Assets/Images/logo.png" alt="Anointed Rivers Ministry Logo">
-      <h3>Anointed Rivers Ministry</h3>
-      <p>
-        A Christ-centered ministry committed to spreading the Gospel,
-        transforming lives, and being a light in the world.
-      </p>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-group">
+                <img src="Assets/Images/logo.png" alt="Anointed Rivers Ministry" class="logo">
+                <div class="logo-text">
+                    <span class="logo-title">Anointed Rivers</span>
+                    <span class="logo-subtitle">Light In The World</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="ministries.html" class="active">Ministries</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="https://www.facebook.com/YourPage/live" target="_blank" class="btn-live">
+                    <span class="live-dot"></span>
+                    Live
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close-btn" id="closeMenuBtn">
+            <span class="material-symbols-rounded">close</span>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="ministries.html">Ministries</a></li>
+            <li><a href="give.html">Give</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="https://www.facebook.com/YourPage/live" target="_blank" class="btn-live mobile-live">
+            <span class="live-dot"></span>
+            Watch Live
+        </a>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="ministries.html">Ministries</a></li>
-        <li><a href="give.html">Give</a></li>
-      </ul>
-    </div>
+    <section class="page-hero ministries-hero">
+        <div class="page-hero-bg" style="background-image: url('Assets/Images/ministries-banner.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Our Ministries</h1>
+            <p>Serving with Purpose</p>
+        </div>
+    </section>
 
-    <!-- Contact -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul class="footer-contact">
-        <li>
-          <span class="material-icons">call</span>
-          <a href="tel:+254116070444">+254 116 070 444</a>
-        </li>
-        <li>
-          <span class="material-icons">email</span>
-          <a href="mailto:annointedrivers@gmail.com">
-            annointedrivers@gmail.com
-          </a>
-        </li>
-        <li>
-          <span class="material-icons">location_on</span>
-          Eldoret, Kenya
-        </li>
-      </ul>
-    </div>
+    <section class="ministries-intro-section">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Growing Together in Service</h2>
+                <p>At Anointed Rivers Ministry, each department plays a vital role in building a strong, Christ-centered community. Our ministries are designed to equip believers, nurture their gifts, and create spaces where faith is lived out with purpose.</p>
+                <p>Whether it's serving, teaching, worship, outreach, or supporting the next generation, every ministry contributes to the mission God has given us.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Service Times -->
-    <div class="footer-col">
-      <h4>Service Times</h4>
-      <p>Sundays</p>
-      <p>9:00 AM & 11:00 AM</p>
-      <p class="footer-note">
-        Need prayer? Reach out — you are not alone.
-      </p>
-    </div>
+    <section class="all-ministries">
+        <div class="container">
+            <!-- Youth Ministry -->
+            <div class="ministry-detail" id="youth">
+                <div class="ministry-visual">
+                    <img src="Assets/Images/youth-ministry.jpeg" alt="Youth Ministry">
+                </div>
+                <div class="ministry-details">
+                    <span class="ministry-tag">Ages 13-25</span>
+                    <h2>Youth Ministry</h2>
+                    <p>Our Youth Ministry empowers the next generation to live boldly in faith. Weekly sessions include Bible study, worship, mentorship, and outreach projects designed to help young people navigate life with godly principles.</p>
+                    <ul class="ministry-list">
+                        <li><span class="material-symbols-rounded">check_circle</span> Weekly youth gatherings</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Mentorship programs</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Community outreach</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Leadership development</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Join Youth Ministry</a>
+                </div>
+            </div>
 
-  </div>
+            <!-- Sunday School -->
+            <div class="ministry-detail reverse" id="sundayschool">
+                <div class="ministry-visual">
+                    <img src="Assets/Images/sunday-school.jpg" alt="Sunday School">
+                </div>
+                <div class="ministry-details">
+                    <span class="ministry-tag">Children</span>
+                    <h2>Sunday School</h2>
+                    <p>Our Sunday School Ministry nurtures children in God's Word, creating a foundation of faith and understanding from a young age. We provide a safe, fun environment where kids learn biblical truths through age-appropriate lessons and activities.</p>
+                    <ul class="ministry-list">
+                        <li><span class="material-symbols-rounded">check_circle</span> Age-appropriate curriculum</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Creative worship sessions</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Caring, trained teachers</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Special holiday programs</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Enroll Your Child</a>
+                </div>
+            </div>
 
-  <!-- Bottom strip -->
-  <div class="footer-bottom">
-    <p>
-      © <span id="year"></span> Anointed Rivers Ministry. All Rights Reserved.
-    </p>
-  </div>
-</footer>
+            <!-- Men's Ministry -->
+            <div class="ministry-detail" id="men">
+                <div class="ministry-visual">
+                    <img src="Assets/Images/men-ministry.jpeg" alt="Men's Ministry">
+                </div>
+                <div class="ministry-details">
+                    <span class="ministry-tag">Men</span>
+                    <h2>Men's Ministry</h2>
+                    <p>The Men's Ministry empowers men to grow spiritually, lead in their families, and serve the community with integrity and purpose. We provide a space for men to connect, share, and grow together in their faith journey.</p>
+                    <ul class="ministry-list">
+                        <li><span class="material-symbols-rounded">check_circle</span> Weekly fellowship meetings</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Leadership training</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Men's retreats</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Community service projects</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Join Men's Ministry</a>
+                </div>
+            </div>
+
+            <!-- Women's Ministry -->
+            <div class="ministry-detail reverse" id="women">
+                <div class="ministry-visual">
+                    <img src="Assets/Images/women-ministry.jpeg" alt="Women's Ministry">
+                </div>
+                <div class="ministry-details">
+                    <span class="ministry-tag">Women</span>
+                    <h2>Women's Ministry</h2>
+                    <p>Our Women's Ministry provides fellowship, mentorship, and spiritual growth opportunities, helping women to thrive in faith and daily life. We create a supportive environment where women can share, learn, and grow together.</p>
+                    <ul class="ministry-list">
+                        <li><span class="material-symbols-rounded">check_circle</span> Bible study groups</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Mentorship programs</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Special events and retreats</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Prayer partnerships</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Join Women's Ministry</a>
+                </div>
+            </div>
+
+            <!-- Worship Team -->
+            <div class="ministry-detail" id="worship">
+                <div class="ministry-visual">
+                    <img src="Assets/Images/worship-team.jpg" alt="Worship Team">
+                </div>
+                <div class="ministry-details">
+                    <span class="ministry-tag">Music & Arts</span>
+                    <h2>Worship Team</h2>
+                    <p>The Worship Team leads the congregation in heartfelt praise and worship, using music and creativity to draw people closer to God. We welcome musicians, vocalists, and technical team members who have a heart for worship.</p>
+                    <ul class="ministry-list">
+                        <li><span class="material-symbols-rounded">check_circle</span> Vocalists and musicians</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Sound and media team</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Training and development</li>
+                        <li><span class="material-symbols-rounded">check_circle</span> Special worship events</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Join Worship Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-bg" style="background-image: url('Assets/Images/cta-bg.jpg');"></div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+            <h2>Be Part of What God Is Doing</h2>
+            <p>Join a family that prays together, grows together, and transforms lives. Whether you're near or far, there's a place for you at Anointed Rivers Ministry.</p>
+            <div class="cta-buttons">
+                <a href="https://chat.whatsapp.com/YourGroupLink" class="btn-primary">Join Our WhatsApp Community</a>
+                <a href="index.html#services" class="btn-secondary">Visit Us This Sunday</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="Assets/Images/logo.png" alt="Logo">
+                <h3>Anointed Rivers Ministry</h3>
+                <p>A Christ-centered ministry committed to spreading the Gospel, transforming lives, and being a light in the world.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/254116070444" target="_blank"><span class="material-symbols-rounded">chat</span></a>
+                    <a href="https://www.facebook.com/YourPage" target="_blank"><span class="material-symbols-rounded">facebook</span></a>
+                    <a href="https://www.instagram.com/YourPage" target="_blank"><span class="material-symbols-rounded">photo_camera</span></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="give.html">Give</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="index.html#services">Sunday Service</a></li>
+                    <li><a href="index.html#services">Wednesday Fellowship</a></li>
+                    <li><a href="index.html#services">Thursday Fellowship</a></li>
+                    <li><a href="index.html#services">Home Fellowship</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+254116070444"><span class="material-symbols-rounded">call</span> +254 116 070 444</a></li>
+                    <li><a href="mailto:annointedrivers@gmail.com"><span class="material-symbols-rounded">email</span> annointedrivers@gmail.com</a></li>
+                    <li><span class="material-symbols-rounded">location_on</span> Eldoret, Kenya</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Anointed Rivers Ministry. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/JS/main.js"></script>
 </body>
 </html>
