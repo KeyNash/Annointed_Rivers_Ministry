@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         menuBtn.addEventListener('click', toggleMobileMenu);
     }
 
-    if (closeMenuBtn) {
+    if (closeMenuBtn && closeMenuBtn !== menuBtn) {
         closeMenuBtn.addEventListener('click', toggleMobileMenu);
     }
 
@@ -74,6 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
             targetContent.classList.add('active');
         }
     };
+
+        // Wire tab buttons to switchTab
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const tab = this.dataset.tab;
+        if (!tab) return;
+        window.switchTab(tab, this);
+      });
+    });
 
     // Slideshow
     const slides = document.querySelectorAll('.slides');
@@ -247,3 +256,60 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // Progress bar animation
+    const masterBar = document.getElementById('masterBar');
+    const raisedEl = document.getElementById('raisedAmount');
+    const percentEl = document.getElementById('percentText');
+    const remainingEl = document.getElementById('remainingText');
+
+    const totalTarget = 2300000;
+    const currentRaised = 680000; // Update this number as funds come in
+    const percent = (currentRaised / totalTarget) * 100;
+    const remaining = totalTarget - currentRaised;
+
+    // Animate numbers
+    animateValue(raisedEl, 0, currentRaised, 2000, 'KES ');
+    animateValue(remainingEl, remaining + 500000, remaining, 2000, 'KES ');
+
+    setTimeout(() => {
+        if (masterBar) {
+            masterBar.style.width = percent + '%';
+        }
+        if (percentEl) {
+            percentEl.textContent = percent.toFixed(1) + '%';
+        }
+    }, 300);
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.need-card, .give-method, .pg-item, blockquote').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+});
+
+// Number counting animation
+function animateValue(element, start, end, duration, prefix = '') {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const value = Math.floor(progress * (end - start) + start);
+        element.textContent = prefix + value.toLocaleString();
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}

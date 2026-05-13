@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the Vision — Anointed Rivers Ministry</title>
+    <meta name="description" content="Join us in building a permanent home for worship, community, and transformation at Anointed Rivers Ministry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/png" href="Assets/Images/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Simple Nav -->
+    <nav class="build-nav">
+        <div class="build-nav-inner">
+            <a href="index.html" class="build-nav-logo">
+                <img src="Assets/Images/logo.png" alt="Logo">
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Section 1: Headline + Emotional Statement -->
+    <header class="build-hero">
+        <div class="build-hero-bg"></div>
+        <div class="build-hero-overlay"></div>
+        <div class="build-hero-content">
+            <span class="build-label">Building for Generations</span>
+            <h1>We Are Building More Than Walls</h1>
+            <p class="build-lead">Every seat we place, every note we play, and every life we touch begins with a foundation of faith—and brick. This is not just construction. It is making room for miracles, for community, and for the calling God has placed on this house.</p>
+            <div class="build-hero-actions">
+                <a href="#give" class="btn-give">
+                    <span class="material-symbols-rounded">favorite</span>
+                    Become a Builder
+                </a>
+                <a href="#breakdown" class="btn-outline">See the Vision</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Current Reality + Needs -->
+    <section class="reality-section" id="breakdown">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Where We Are</span>
+                <h2>The Space Where Worship Happens</h2>
+                <p>Right now, our congregation gathers with hearts wide open—but our building is still becoming. Below is a look at our current worship environment, our team, and the gap between where we are and where God is taking us.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item wide">
+                    <img src="Assets/Images/congregation-service.jpg" alt="Congregation during service">
+                    <span class="gallery-caption">Our congregation worshipping together</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/Images/worship-team.jpg" alt="Worship team current setup">
+                    <span class="gallery-caption">Current worship setup</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/Images/choir-team.jpg" alt="Choir team">
+                    <span class="gallery-caption">Our choir team</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/Images/media-team.jpg" alt="Media and sound team">
+                    <span class="gallery-caption">Media & sound crew</span>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="Assets/Images/current-building.jpg" alt="Current building progress">
+                    <span class="gallery-caption">Our building as it stands today</span>
+                </div>
+            </div>
+
+            <!-- Big Progress -->
+            <div class="master-progress">
+                <div class="progress-header">
+                    <div>
+                        <h3>Vision Progress</h3>
+                        <p class="transparency-note">
+                            <span class="material-symbols-rounded">verified</span>
+                            We value transparency and accountability in every contribution received.
+                        </p>
+                    </div>
+                    <div class="progress-numbers">
+                        <span class="raised" id="raisedAmount">KES 0</span>
+                        <span class="target">of KES 2,300,000</span>
+                    </div>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" id="masterBar" data-target="29.5"></div>
+                </div>
+                <div class="progress-meta">
+                    <span><strong id="percentText">0%</strong> funded</span>
+                    <span><strong id="remainingText">KES 0</strong> to go</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Breakdown -->
+    <section class="breakdown-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Blueprint</span>
+                <h2>What Your Support Builds</h2>
+                <p>Every contribution goes directly toward tangible outcomes. Here is exactly what we are working on, why it matters, and what it costs.</p>
+            </div>
+
+            <div class="breakdown-grid">
+                <!-- Flooring -->
+                <div class="need-card" data-cost="450000">
+                    <div class="need-visual">
+                        <span class="material-symbols-rounded">floor</span>
+                    </div>
+                    <div class="need-body">
+                        <h4>Flooring</h4>
+                        <p>Quality tile flooring to create a clean, durable, and dignified space for worshippers. Protects against dust, improves acoustics, and makes the sanctuary welcoming for all ages.</p>
+                        <div class="need-footer">
+                            <span class="need-cost">KES 450,000</span>
+                            <span class="need-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roofing -->
+                <div class="need-card" data-cost="600000">
+                    <div class="need-visual">
+                        <span class="material-symbols-rounded">roofing</span>
+                    </div>
+                    <div class="need-body">
+                        <h4>Roofing</h4>
+                        <p>Iron sheet roofing with proper insulation to shield the congregation from rain and heat. A solid roof means uninterrupted services and protection for our instruments and media equipment.</p>
+                        <div class="need-footer">
+                            <span class="need-cost">KES 600,000</span>
+                            <span class="need-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seating -->
+                <div class="need-card" data-cost="350000">
+                    <div class="need-visual">
+                        <span class="material-symbols-rounded">event_seat</span>
+                    </div>
+                    <div class="need-body">
+                        <h4>Seating</h4>
+                        <p>Comfortable, durable chairs for the congregation. No one should stand through the Word because we lack seats. Proper seating honors our members and visitors alike.</p>
+                        <div class="need-footer">
+                            <span class="need-cost">KES 350,000</span>
+                            <span class="need-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lighting & Sound -->
+                <div class="need-card" data-cost="500000">
+                    <div class="need-visual">
+                        <span class="material-symbols-rounded">lightbulb</span>
+                    </div>
+                    <div class="need-body">
+                        <h4>Lighting & Sound Setup</h4>
+                        <p>Professional stage lighting and a full PA system so every word preached and every song sung reaches every heart in the room—clearly and beautifully.</p>
+                        <div class="need-footer">
+                            <span class="need-cost">KES 500,000</span>
+                            <span class="need-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instruments -->
+                <div class="need-card wide" data-cost="400000">
+                    <div class="need-visual">
+                        <span class="material-symbols-rounded">piano</span>
+                    </div>
+                    <div class="need-body">
+                        <h4>Worship Instruments</h4>
+                        <p>Keyboard, drum set, microphones, and speakers. These are not tools—they are vessels. When our worship team has reliable instruments, heaven meets earth in this place.</p>
+                        <div class="need-instruments">
+                            <span class="chip">Keyboard</span>
+                            <span class="chip">Drums</span>
+                            <span class="chip">Microphones</span>
+                            <span class="chip">Speakers</span>
+                        </div>
+                        <div class="need-footer">
+                            <span class="need-cost">KES 400,000</span>
+                            <span class="need-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Ways to Give -->
+    <section class="give-section-build" id="give">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">Partner With Us</span>
+                <h2>Ways to Give</h2>
+                <p class="section-subtitle">Choose the method that works best for you. Every gift, no matter the size, moves us closer to opening these doors.</p>
+            </div>
+
+            <div class="give-methods">
+                <div class="give-method">
+                    <div class="method-badge mpesa">M-Pesa</div>
+                    <h4>Paybill</h4>
+                    <div class="method-detail">
+                        <span>Business No.</span>
+                        <strong>123456</strong>
+                    </div>
+                    <div class="method-detail">
+                        <span>Account</span>
+                        <strong>BUILD</strong>
+                    </div>
+                    <p class="method-hint">Go to Lipa na M-Pesa → Paybill → enter 123456 → Account: BUILD</p>
+                </div>
+
+                <div class="give-method">
+                    <div class="method-badge mpesa-till">M-Pesa Till</div>
+                    <h4>Buy Goods</h4>
+                    <div class="method-detail">
+                        <span>Till Number</span>
+                        <strong>987654</strong>
+                    </div>
+                    <p class="method-hint">Go to Lipa na M-Pesa → Buy Goods → enter 987654</p>
+                </div>
+
+                <div class="give-method">
+                    <div class="method-badge bank">Bank</div>
+                    <h4>Bank Transfer</h4>
+                    <div class="method-detail">
+                        <span>Bank</span>
+                        <strong>XYZ Bank</strong>
+                    </div>
+                    <div class="method-detail">
+                        <span>Account</span>
+                        <strong>0001234567890</strong>
+                    </div>
+                    <div class="method-detail">
+                        <span>Name</span>
+                        <strong>Anointed Rivers Ministry</strong>
+                    </div>
+                </div>
+
+                <div class="give-method">
+                    <div class="method-badge paypal">PayPal</div>
+                    <h4>International</h4>
+                    <p class="method-hint">For our partners outside Kenya.</p>
+                    <a href="#" class="btn-give-small">Give via PayPal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Progress, Testimonies, Photos -->
+    <section class="progress-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Journey</span>
+                <h2>Progress & Stories</h2>
+                <p>This house is being built by many hands. Here is what God has already done—and what He is doing through people like you.</p>
+            </div>
+
+            <div class="progress-gallery">
+                <div class="pg-item">
+                    <img src="Assets/Images/progress-1.jpg" alt="Foundation work">
+                    <span class="pg-tag">Foundation Complete</span>
+                </div>
+                <div class="pg-item">
+                    <img src="Assets/Images/progress-2.jpg" alt="Wall construction">
+                    <span class="pg-tag">Walls Rising</span>
+                </div>
+                <div class="pg-item">
+                    <img src="Assets/Images/progress-3.jpg" alt="Volunteers at work">
+                    <span class="pg-tag">Volunteers</span>
+                </div>
+            </div>
+
+            <div class="testimonies">
+                <blockquote>
+                    <p>"I gave not because I had much, but because I believe in what God is doing here. Seeing the walls go up reminded me that faith is built one brick at a time."</p>
+                    <cite>— A Member of the Congregation</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Our children deserve a safe, beautiful place to learn about Jesus. This building is not just for us—it is for the next generation."</p>
+                    <cite>— Sunday School Teacher</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Become a Builder -->
+    <section class="builder-section">
+        <div class="container">
+            <div class="builder-box">
+                <div class="builder-content">
+                    <span class="section-label">Join the Vision</span>
+                    <h2>Become a Builder</h2>
+                    <p>This house will not be built by one person. It will be built by a family of believers who decided that future generations deserve a place to encounter God. When you give, you are not just funding a project. You are laying down a legacy.</p>
+                    <p class="builder-verse">"Unless the Lord builds the house, the builders labor in vain." — Psalm 127:1</p>
+                    <a href="#give" class="btn-give">
+                        <span class="material-symbols-rounded">handshake</span>
+                        I Want to Build
+                    </a>
+                </div>
+                <div class="builder-image">
+                    <img src="Assets/Images/builder-vision.jpg" alt="Hands holding a brick">
+                </div>
+            </div>
+
+            <div class="builder-wall">
+                <h3>The Builder's Wall</h3>
+                <p>Every person who contributes becomes part of our Builder's Wall—a living record of those who helped raise this house. Give today, and your name will be inscribed in the story of what God did here.</p>
+                <div class="wall-names" id="wallNames">
+                    <span class="wall-name">You?</span>
+                    <span class="wall-name">You?</span>
+                    <span class="wall-name">You?</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="build-footer">
+        <div class="container">
+            <p>Anointed Rivers Ministry — Eldoret, Kenya</p>
+            <p class="footer-small">All contributions are received with gratitude and managed with integrity. Financial reports available upon request.</p>
+        </div>
+    </footer>
+
+    <script src="Assets/JS/main.js"></script>
+</body>
+</html>
